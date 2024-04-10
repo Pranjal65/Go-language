@@ -4,11 +4,31 @@ import (
 	"fmt"
 	"sort"
 	"strings"
+	"cmp"
 )
 
 func main(){
 	fmt.Println("************* Standard Libraries ******************");
-     // strings package
+    // user inputs
+	fmt.Println("enter a value: ")
+	var k int;
+	fmt.Scan(&k);
+	fmt.Println("Your answer: ",k);    
+	/*The Scanln() function is similar to Scan(), but it stops scanning for inputs at a newline*/
+	var i,j int
+
+    fmt.Print("Type two numbers: ")
+    fmt.Scanln(&i, &j)
+    fmt.Println("Your numbers are:", i, "and", j)
+
+	//The Scanf() function receives the inputs and stores them based on the determined formats for its arguments.
+	fmt.Print("Type two numbers: ")
+    fmt.Scanf("%v %v",&i, &j)
+    fmt.Println("Your numbers are:", i, "and", j)
+    
+	fmt.Println("********** Strings Package***************")
+	
+	// strings package
 	 // 1] conatins function
 	 Greetings:= "Hello everyone";
 	 fmt.Println(strings.Contains(Greetings,"everyone"))  // return true or false
@@ -53,5 +73,19 @@ func main(){
 
 	  fmt.Println("index of  tye string is : ", sort.SearchStrings(strarr,"tye"))
 
-      
+     fmt.Println("************* CMP package ************")
+	  // cmp package
+	  //   -1 if x is less than y,
+      //    0 if x equals y,
+      //    +1 if x is greater than y.
+	  userInput1 := ""
+	  userInput2 := "some text"
+
+	  fmt.Println(cmp.Or(userInput1, "default"))
+	  fmt.Println(cmp.Or(userInput2, "default"))
+	  fmt.Println(cmp.Or(userInput1, userInput2, "default"))
+
+
+
+   
 }
