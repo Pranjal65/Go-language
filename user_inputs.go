@@ -54,4 +54,5 @@ func inputs(){
 	fmt.Println("********** User Inputs *******")
 	b:=createBills();
 	fmt.Println(b);
+	b.file_manage();
 }
