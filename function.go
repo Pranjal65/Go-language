@@ -48,7 +48,7 @@ func initials(s string) (string ,string){
 
 
 }
-func main(){
+func functions(){
 	fmt.Println(add(2,3));
     exmpl(sum)
 	fn,sn:=initials("pranjal more");

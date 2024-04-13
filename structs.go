@@ -8,7 +8,7 @@ type Vertex struct {
 	Y int
 }
 
-func main() {
+func structs() {
 	// create  object of each struct or variable for struct and the acess struct elements by (.).
      var v Vertex;
 	 v.X=1;

@@ -6,7 +6,7 @@ import (
 	//"strings"
 )
 
-func main(){
+func maps(){
     fmt.Println("********** Map **********");
 
 	// declaration of map

@@ -7,7 +7,7 @@ import (
 	"cmp"
 )
 
-func main(){
+func standard_Library(){
 	fmt.Println("************* Standard Libraries ******************");
     // user inputs
 	fmt.Println("enter a value: ")

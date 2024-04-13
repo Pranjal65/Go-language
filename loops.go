@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main(){
+func loops(){
 	fmt.Println("********Loops**********")
 
 	// while loop :In Go language for keyword is used for while loop
