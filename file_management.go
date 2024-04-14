@@ -15,6 +15,8 @@ func format(b *bill) string {
 	fb += fmt.Sprintf("\ntotal : %v", b.total)
 	return fb
 }
+
+//function is called in structs
 func (b *bill) file_manage() {
 
 	data := []byte(format(b))
@@ -24,5 +26,6 @@ func (b *bill) file_manage() {
 		// panic function is used to break the flow of program when error ocurred
 		panic(err)
 	}
+
 
 }

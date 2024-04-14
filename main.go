@@ -14,6 +14,7 @@ func main() {
 	// start_func();
 	// structs();
 
-	//inputs();
-	interfaces();
+	inputs();
+	// interfaces();
+	
 }
